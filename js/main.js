@@ -54,7 +54,7 @@ function countUp(idx){
 
 window.addEventListener("scroll",function(){
         let st = window.pageYOffset;
-        //console.log(st)
+        // console.log(st);
         if(st >= 401) {
             skills.classList.add("on"); 
         } else if (st < 500){
@@ -62,12 +62,11 @@ window.addEventListener("scroll",function(){
                 countUp(i)
             }   
         }
-        if (st >= profile.offsetTop-300){
+        if (st >= 1040){
            about.classList.add("on");
         }
-        if (st >= converseKR.offsetTop){
-            console.log(converseKR.offsetTop)
-            converseKR.classList.add("on");
+        if (st >= 2100){
+            converseKR.classList.add("on");   
         }
         if(st >= 2300){
             kyoboBookStory.classList.add("on");
