@@ -1,0 +1,170 @@
+@media all and (max-width: 1665px) {
+  body.mobile #header {
+    width: 300px;
+  }
+  body.mobile #header #logo img {
+    width: 300px;
+  }
+  body.mobile #header p {
+    font-size: 2.3rem;
+  }
+  #mainVisual {
+    width: 100%;
+    min-height: 100vh;
+  }
+  #mainVisual video {
+    width: 100%;
+  }
+  #profile {
+    margin: 150px 0;
+    overflow: hidden;
+  }
+  #profile .about {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  #profile .about .imgBox img {
+    width: 510px;
+    height: 250px;
+  }
+  #profile .info {
+    padding: 10px;
+    width: 100% !important;
+    word-break: keep-all;
+    top: 30%;
+    right: 0;
+    transform: translateY(0);
+    border-radius: 0;
+  }
+  #profile .info .txt {
+    font-size: 1.4rem;
+    padding: 15px;
+  }
+  #profile .info .txt p {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 1425px) {
+  #skill article.publishing {
+    width: 100%;
+    float: none;
+  }
+  #skill article.design {
+    width: 100%;
+    float: none;
+  }
+  #profile .about.on {
+    top: 50px;
+    left: 0;
+    padding: 10px;
+    z-index: 1;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  #portfolio article .imgBox img {
+    float: none;
+    width: 100%;
+    padding: 10px;
+  }
+  #portfolio article.left .imgBox {
+    margin-left: 0;
+  }
+  #portfolio article.left .txtBox {
+    position: static;
+    text-align: center;
+    margin: 50px 0;
+  }
+  #portfolio article.right .imgBox {
+    margin-right: 0;
+  }
+  #portfolio article.right .txtBox {
+    position: static;
+    text-align: center;
+    margin: 50px 0;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  #header {
+    width: 300px;
+  }
+  #header #logo img {
+    width: 300px;
+  }
+  #header p {
+    font-size: 2.2rem;
+  }
+}
+
+@media all and (max-width: 721px) {
+  #skill article li img {
+    width: 70% !important;
+  }
+  #skill article .txt {
+    font-size: 2rem;
+    word-break: keep-all;
+  }
+  #skill article .txt span {
+    font-size: 1.6em;
+  }
+  #footer #footImg {
+    z-index: -1;
+  }
+}
+
+@media all and (max-width: 540px) {
+  #skill article.publishing .skills {
+    bottom: 0;
+  }
+  #skill article.publishing .skills li {
+    margin: 9px 20px;
+  }
+  #skill article.design .skills {
+    bottom: 165px;
+  }
+  #skill article .txt {
+    padding: 10px;
+    left: 10px;
+    top: 30px;
+    font-size: 1.6rem;
+  }
+  #profile .about .imgBox img {
+    width: 100%;
+  }
+  #profile .info .txt span {
+    font-size: 1.8rem;
+  }
+  #portfolio article .txtBox {
+    word-break: keep-all;
+    padding: 10px;
+  }
+  #portfolio article .txtBox .view a {
+    padding: 5px 15px;
+  }
+  #footer #footImg img {
+    width: 100%;
+  }
+  #footer .scrollTop {
+    width: 30px;
+    height: 30px;
+  }
+  #footer .scrollTop img {
+    width: 30px;
+  }
+  #footer .contact {
+    top: 50%;
+  }
+  #footer .contact li h2 {
+    font-size: 1.6rem;
+  }
+  #footer .contact li p {
+    font-size: 2.6rem;
+  }
+  #footer .copy {
+    font-size: 1.4rem;
+  }
+}
