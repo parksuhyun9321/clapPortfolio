@@ -54,7 +54,7 @@ function countUp(idx){
 
 window.addEventListener("scroll",function(){
         let st = window.pageYOffset;
-        // console.log(st)
+        //console.log(st)
         if(st >= 401) {
             skills.classList.add("on"); 
         } else if (st < 500){
