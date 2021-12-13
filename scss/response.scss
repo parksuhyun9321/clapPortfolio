@@ -1,0 +1,233 @@
+@media all and(max-width: 1665px){// body.mobile #header #mainVisual #profile
+    body {
+        &.mobile {
+            #header {
+                width: 300px;
+                #logo {
+                    img {
+                        width: 300px;
+                    }
+                }
+                p {
+                    font-size: 2.3rem;
+                }
+            }
+        }
+    }
+   
+    #mainVisual {
+        width: 100%;
+        min-height:100vh;
+    video {
+            width: 100%;
+        }
+    }
+    #profile {
+        margin: 150px 0;
+        overflow: hidden;
+        .about {
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            .imgBox {
+               img {
+                   width: 510px;
+                   height: 250px;
+               }
+            }
+        }
+        .info {
+            padding: 10px;
+            width: 100% !important;
+            word-break: keep-all;
+            top: 30%;
+            right: 0;
+            transform: translateY(0);
+            border-radius: 0;
+            .txt {
+                font-size: 1.4rem;
+                padding: 15px;
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+@media all and(max-width: 1425px){ // #skill
+    #skill {
+        article {
+           &.publishing {
+               width: 100%;
+               float: none;
+           }
+           &.design {
+               width: 100%;
+               float: none;
+           }
+        }
+    }
+    #profile {
+        .about {
+            &.on {
+                top: 50px;
+                left: 0;
+                padding: 10px;
+                z-index: 1;
+            }
+        }
+    }
+}
+@media all and(max-width: 1300px){ // #portfolio
+    #portfolio {
+        article {
+            .imgBox {
+                img {
+                    float: none;
+                    width: 100%;
+                    padding: 10px;
+                }
+            }
+            &.left {
+                .imgBox {
+                    margin-left: 0;
+                }
+                .txtBox {
+                    position: static;
+                    text-align: center;
+                    margin: 50px 0;
+                }
+            }
+            &.right {
+                .imgBox {
+                    margin-right: 0;
+                }
+                .txtBox {
+                    position: static;
+                    text-align: center;
+                    margin: 50px 0;
+                }
+            }
+        }
+    }
+}
+@media all and(max-width: 1024px) { // #header
+    #header {
+        width: 300px;
+        #logo {
+            img {
+                width: 300px;
+            }
+        }
+        p {
+            font-size: 2.2rem;
+        }
+    }
+}
+@media all and(max-width: 721px){ // #header #skill #footer
+    #skill {
+        article {
+            li {
+                img {
+                    width: 70% !important;
+                }
+            }
+            .txt {
+                font-size: 2rem;
+                word-break: keep-all;
+                span {
+                    font-size: 1.6em;
+                }
+            }
+        }   
+    }
+    #footer {
+        #footImg {
+            z-index: -1;
+        }
+    }
+}
+@media all and(max-width: 540px){ // #header #skill #profile #portfolio #footer
+  
+    #skill {
+        article {
+            &.publishing {
+                .skills {
+                    bottom: 0;
+                    li {
+                        margin: 9px 20px ;
+                    }
+                }
+            }
+            &.design {
+                .skills {
+                    bottom: 165px;
+                }
+            }
+            .txt {
+                padding: 10px;
+                left: 10px;
+                top: 30px;
+                font-size: 1.6rem;
+            }
+        }
+    }
+    #profile {
+        .about {
+            .imgBox {
+                img {
+                   width:100%;
+                }
+            }
+        }
+        .info {
+            .txt {
+                span {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+    #portfolio {
+        article {
+            .txtBox {
+                word-break: keep-all;
+                padding: 10px;
+                .view {
+                    a {
+                        padding: 5px 15px;
+                    }
+                }
+            }
+        }
+    }
+    #footer {
+        #footImg {
+            img {
+                width: 100%;
+            }
+        }
+        .scrollTop {
+            width: 30px;
+            height: 30px;
+            img {
+                width: 30px;
+            }
+        }
+        .contact {
+            top: 50%;
+            li {
+                h2 {
+                    font-size: 1.6rem;
+                }
+                p {
+                    font-size: 2.6rem;
+                }
+            }
+        }
+        .copy {
+            font-size: 1.4rem;
+        }
+    }
+}

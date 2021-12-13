@@ -1,0 +1,198 @@
+body {
+  background-color: #fffafa;
+  overflow-x: hidden;
+}
+
+#header {
+  position: absolute;
+  bottom: 10%;
+  left: 4%;
+  z-index: 2;
+}
+
+#header #logo img {
+  width: 300px;
+}
+
+#header p {
+  color: #fff;
+  font-size: 4.2rem;
+  line-height: 1.1;
+  font-family: 'Black Han Sans';
+}
+
+#mainVisual {
+  height: 100vh;
+  position: relative;
+}
+
+#mainVisual:before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+#mainVisual video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#footer {
+  width: 100%;
+  height: 1000px;
+  position: relative;
+}
+
+#footer #footImg {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+#footer .scrollUp {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 30px;
+  right: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  z-index: 999;
+  pointer-events: auto;
+}
+
+#footer .scrollUp img {
+  width: 50px;
+}
+
+#footer .contact {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 90px;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  letter-spacing: -1px;
+}
+
+#footer .contact li {
+  line-height: 2;
+}
+
+#footer .contact li:nth-child(odd) {
+  padding-bottom: 30px;
+}
+
+#footer .contact li.phone {
+  position: relative;
+}
+
+#footer .contact li.phone a {
+  font-size: 3rem;
+  font-weight: 700;
+  cursor: default;
+  pointer-events: none;
+}
+
+#footer .contact li.phone .touch {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  transform: rotate(-15deg);
+  animation: telTouchMove 1s ease infinite alternate;
+  display: none;
+  z-index: -1;
+}
+
+#footer .contact li.phone .touch img {
+  width: 50px;
+}
+
+#footer .contact li.email {
+  position: relative;
+}
+
+#footer .contact li.email a {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#footer .contact li.email .touch {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-25deg);
+  animation: emailTouchMove 1s ease infinite alternate;
+  display: block;
+  z-index: -1;
+}
+
+#footer .contact li.email .touch img {
+  width: 50px;
+}
+
+#footer .contact li h2 {
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+#footer .contact li p {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#footer .copy {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #0e6eb8;
+  color: #fff;
+  font-size: 1.8rem;
+  letter-spacing: -1px;
+  font-family: 'Noto Sans KR';
+}
+
+.mobile #footer .contact .phone .touch {
+  display: block;
+}
+
+.mobile #footer .contact .phone a {
+  cursor: pointer;
+  pointer-events: visible;
+}
+
+.mobile #footer .contact .email .touch {
+  display: none;
+}
+
+.mobile #footer .contact .email a {
+  cursor: default;
+  pointer-events: none;
+}
+
+@keyframes telTouchMove {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: -15px;
+  }
+}
+
+@keyframes emailTouchMove {
+  0% {
+    top: 60px;
+  }
+  100% {
+    top: 90px;
+  }
+}
